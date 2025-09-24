@@ -1,0 +1,62 @@
+/* Estilos básicos para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+ header {
+            background-color: #2b4823;
+            color: #f4f6f5;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        /* Navegación */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #91dc93;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav li {
+    display: inline-flex
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    padding: 10px;
+    width: 150px;
+    transition: all 0.3s ease; /* Agregamos transición para efecto suave */
+}
+
+nav ul li a:hover {
+    background-color: #1ec960; /* Cambiamos el color de fondo al pasar el puntero */
+    color: #1f1e1e; /* Cambiamos el color del texto al pasar el puntero */
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,154 @@
+/*
+ * ----------------------------------------------------
+ * ESTILOS GENERALES
+ * ----------------------------------------------------
+ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/*
+ * ----------------------------------------------------
+ * ENCABEZADO Y NAVEGACIÓN
+ * ----------------------------------------------------
+ */
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745; /* Verde para el logo */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #28a745; /* Color verde en hover */
+}
+
+/*
+ * ----------------------------------------------------
+ * SECCIÓN DE PRODUCTOS
+ * ----------------------------------------------------
+ */
+main {
+    padding: 2rem 0;
+}
+
+h1 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 2rem;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 20px;
+}
+
+.producto-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.producto-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.producto-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.producto-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.producto-card .precio {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e67e22; /* Naranja para el precio */
+    display: block;
+    margin: 1rem 0;
+}
+
+.producto-card button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.producto-card button:hover {
+    background-color: #218838;
+}
+
+/*
+ * ----------------------------------------------------
+ * PIE DE PÁGINA
+ * ----------------------------------------------------
+ */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
